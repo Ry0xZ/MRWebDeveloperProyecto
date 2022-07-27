@@ -1,0 +1,360 @@
+/* Reiniciar margenes, bordes, ect*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+
+/* barra de navegacion */
+
+.logo {
+    font-size: 30px !important;
+    padding-left: 40px;
+    color: rgb(255, 255, 255);
+    text-decoration-line: overline !important; 
+    text-decoration-color: rgb(0, 0, 0) !important;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase ;
+    line-height: 80px;
+    text-shadow: 0 1px rgb(0, 0, 0);
+    width: max-content;
+    
+}
+
+.logo span {
+    color: rgba(143, 23, 47, 0.856);
+
+}
+
+.nav-link {
+    font-size: 15px;
+    margin: 10px;
+    color: rgb(255 255 255);
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    z-index: 99;
+}
+
+.nav-link:hover{
+    color:rgba(143, 23, 47, 0.856) ;
+    text-shadow: 1px 0px;
+    text-decoration: overline;
+    text-decoration-color: rgb(255, 255, 255) ;
+}
+
+/* Fin de barra de navegacion */
+
+
+/* Estilo de pagina Home */
+.bg-img{
+    background-image: linear-gradient(135deg, rgba(0, 32, 36, 0.774) 20%, rgba(10, 173, 255, 0.733) 50%, rgba(0, 213, 255, 0.486) 100%), url(../Media/fondo.jpeg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: auto;
+    background-size: 200%;
+    animation: fondoanimado 90s infinite;
+}
+
+@keyframes fondoanimado {
+    0%{
+        background-position: 30% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 30%;
+    }
+    
+}
+
+.contenido {
+    padding-top: 95px;
+    height: auto!important;
+}
+
+
+.contenidoHome__titulo {
+    background-color: rgba(0, 0, 0, 0.486);
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.contenidoHome__boton {
+    margin-top: 30px;
+    transition: all 300ms;
+}
+
+
+.botonHome__link {
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.486);
+    
+}
+
+.botonHome__link a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.botonHome__link a:hover {
+    color: rgb(0, 0, 0);
+
+}
+
+/* Fin de estilo de pagina Home */
+
+/* Estilo pagina Sobre mi */
+.perfil {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+}
+
+.tarjetas {
+    height: 300px;
+}
+
+/* Fin de Estilo pagina Sobre mi */
+
+/* Estilo pagina de proyecto */
+.banner-proyecto {
+        background: linear-gradient(135deg, rgba(0, 32, 36, 0.774) 20%, rgba(10, 173, 255, 0.733) 50%, rgba(16, 178, 211, 0.486) 100%), url(../Media/fondoproyectos.jpg) ;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        width: auto;
+        height: auto;
+        background-size: 200%;
+        animation: fondoanimado 90s infinite;
+}
+
+.contenedorProyectos__titulo {
+    color: rgb(252, 40, 40);
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.322);
+    border-radius: 10px;
+
+}
+
+.contenedorProyectos__parrafo {
+    font-weight:bold;
+    font-size: large;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.contenedorProyectos {
+    width: 600px;
+    font-size: 13px;
+    min-height: calc(100vh - 100px - 200px);
+    text-transform: uppercase;
+    margin-top: 106px;
+}
+
+.contenedor-item {
+    height: auto;
+    width: auto;
+}
+
+/* Fin de estilo pagina de proyecto */
+
+/* Estilo pagina de servicios */
+#servicios {
+    padding-top: 110px;
+    height: 1100px;
+}
+
+/* Fin de estilo pagina de servicios */
+
+/* Estilo de pagina sobre mi */
+#sobremi {
+    padding-top: 110px;
+    height: auto;
+}
+
+/* Estilo pagina de contacto*/
+
+.banner-contacto {
+    background: linear-gradient(135deg, rgba(0, 32, 36, 0.774) 20%, rgba(10, 173, 255, 0.733) 50%, rgba(16, 178, 211, 0.486) 100%), url(../Media/fondocontacto.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: auto;
+    height: 1000px;
+    background-size: 200%;
+    animation: fondoanimado 90s infinite;
+}
+
+.formulario {
+    margin-top: 106px;
+    min-height: calc(100vh - 95px -200px);
+}
+
+
+.contenedor-form{
+    background-color: rgba(255, 255, 255, 0.534);
+    padding: 50px 10px;
+    border-radius: 10px;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+
+
+form span {
+    color: rgb(255, 0, 0);
+}
+
+/* Fin de estilo pagina de contacto*/
+
+
+/* Estilo footer */
+footer {
+    min-height:100px !important;
+    
+    }
+
+/* Fin de estilo footer */
+
+
+
+/*------------------ RESPONSIVE ------------------*/
+
+ /* Estilo pagina  escritorio */
+
+@media only screen and (max-width: 1366px){
+
+    .logo {
+        font-size: 26px;
+        padding-left: 20px; 
+    }
+
+}
+
+ /* fin de estilo pagina  escritorio */
+
+ /* Estilo pagina  tablet */
+
+@media only screen and (max-width: 992px) {
+
+    /* Menu pagina tablet */
+
+    .logo {
+        font-size: 20px !important;
+        padding: 0 0px !important;
+        padding-top: 10px;
+        
+    }
+
+    .navbar-toggler-icon {
+        width: 1.4em;
+        height: 1.4em;
+        color: rgb(255, 255, 255);
+    }
+    
+    .bg-img{
+        background-size: 600%;
+    }
+
+    .banner-contacto{
+        background-size: 600%;
+    }
+    
+    .banner-proyecto {
+        background-size: 600%;
+    }
+
+    .contenidoHome__titulo {
+        font-size: 27px;
+    }
+
+    .contenidoHome__link {
+        font-size: 27px;
+    }
+
+    .contenedorProyectos__titulo h2 {
+        font-size: 18px;
+    }
+    
+    .contenedorProyectos__parrafo p {
+        font-size: 14px;
+    }
+
+    .perfil {
+        width: 200px;
+        height: 200px;
+    }
+
+    .fa-4x {
+        font-size: 2.5em;
+    }
+
+    .lead {
+        font-size: 18px !important;
+    }
+
+    .display-6 {
+        font-size: 31px !important;
+    }
+
+}
+
+ /* fin de estilo pagina  tablet */
+
+/* Estilo de pagina Mobile */
+
+@media only screen and (max-width: 640px) {
+
+    nav {
+        --bs-bg-opacity: 1;
+        background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+    }
+
+    .logo {
+        font-size: 18px !important;
+    }
+
+    .bg-img{
+        background-size: 700%;
+    }
+
+    .banner-contacto{
+        background-size: 800%;
+    }
+
+    .banner-proyecto {
+        background-size: 800%;
+    }
+
+    .contenidoHome__titulo {
+        font-size: 18px;
+    }
+
+    .contenidoHome__link {
+        font-size: 18px;
+    }
+
+    .contenedorProyectos__titulo h2 {
+        font-size: 17px;
+    }
+    .contenedorProyectos p {
+        font-size: 12px;
+    }
+
+}
+
+/* Fin de estilo de pagina Mobile */

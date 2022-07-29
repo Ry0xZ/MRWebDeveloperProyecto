@@ -18,9 +18,9 @@ html {
   padding-left: 40px;
   color: rgb(255, 255, 255);
   -webkit-text-decoration-line: overline !important;
-  text-decoration-line: overline !important;
+          text-decoration-line: overline !important;
   -webkit-text-decoration-color: rgb(0, 0, 0) !important;
-  text-decoration-color: rgb(0, 0, 0) !important;
+          text-decoration-color: rgb(0, 0, 0) !important;
   font-family: "Bebas Neue", cursive;
   text-transform: uppercase;
   line-height: 80px;
@@ -29,7 +29,6 @@ html {
   width: -moz-max-content;
   width: max-content;
 }
-
 .logo span {
   color: rgba(143, 23, 47, 0.856);
 }
@@ -42,13 +41,12 @@ html {
   text-transform: uppercase;
   z-index: 99;
 }
-
-.nav-link :hover {
+.nav-link:hover {
   color: rgba(143, 23, 47, 0.856);
   text-shadow: 1px 0px;
   text-decoration: overline;
   -webkit-text-decoration-color: rgb(255, 255, 255);
-  text-decoration-color: rgb(255, 255, 255);
+          text-decoration-color: rgb(255, 255, 255);
 }
 
 /* Fin de barra de navegacion */
@@ -61,18 +59,16 @@ html {
   width: auto;
   background-size: 200%;
   -webkit-animation: fondoanimado 90s infinite;
-  animation: fondoanimado 90s infinite;
+          animation: fondoanimado 90s infinite;
 }
 
 @-webkit-keyframes fondoanimado {
   0% {
     background-position: 30% 50%;
   }
-
   50% {
     background-position: 100% 50%;
   }
-
   100% {
     background-position: 0% 30%;
   }
@@ -82,16 +78,13 @@ html {
   0% {
     background-position: 30% 50%;
   }
-
   50% {
     background-position: 100% 50%;
   }
-
   100% {
     background-position: 0% 30%;
   }
 }
-
 .contenido {
   padding-top: 95px;
   height: auto !important;
@@ -112,13 +105,11 @@ html {
   font-size: 25px;
   background-color: rgba(0, 0, 0, 0.486);
 }
-
 .botonHome__link a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-
-.botonHome__link :hover {
+.botonHome__link:hover {
   color: rgb(0, 0, 0);
 }
 
@@ -145,7 +136,7 @@ html {
   height: auto;
   background-size: 200%;
   -webkit-animation: fondoanimado 90s infinite;
-  animation: fondoanimado 90s infinite;
+          animation: fondoanimado 90s infinite;
 }
 
 .contenedorProyectos__titulo {
@@ -181,7 +172,6 @@ html {
   padding-top: 110px;
   height: 800px;
 }
-
 #servicios h3 {
   font-size: 40px;
 }
@@ -203,7 +193,7 @@ html {
   height: 1000px;
   background-size: 200%;
   -webkit-animation: fondoanimado 90s infinite;
-  animation: fondoanimado 90s infinite;
+          animation: fondoanimado 90s infinite;
 }
 
 .formulario {
@@ -235,146 +225,115 @@ footer {
 /*------------------ RESPONSIVE ------------------*/
 /* Estilo pagina  escritorio */
 @media only screen and (max-width: 1366px) {
-
   /* Barra de navegacion */
   .logo {
     font-size: 26px;
     padding-left: 20px;
   }
-
   /* Fin de barra de navegacion */
 }
-
 /* fin de estilo pagina  escritorio */
 /* Estilo pagina  tablet */
 @media only screen and (max-width: 992px) {
-
   /* Barra de navegacion */
   .logo {
     font-size: 20px !important;
     padding: 0 0px !important;
     padding-top: 10px;
   }
-
   .navbar-toggler-icon {
     width: 1.4em;
     height: 1.4em;
     color: rgb(255, 255, 255);
   }
-
   /* Fin de barra de navegacion */
   /* Home */
   .bg-img {
     background-size: 600%;
   }
-
   .contenidoHome__titulo {
     font-size: 27px;
   }
-
   .contenidoHome__link {
     font-size: 27px;
   }
-
   /* Fin de Home */
   /* Contacto */
   .banner-contacto {
     background-size: 600%;
   }
-
   /* Fin de contacto */
   /* Proyecto */
   .banner-proyecto {
     background-size: 600%;
   }
-
   .contenedorProyectos__titulo h2 {
     font-size: 18px;
   }
-
   .contenedorProyectos__parrafo p {
     font-size: 16px;
   }
-
   /* Sobre mi */
   .perfil {
     width: 200px;
     height: 200px;
   }
-
   /* Fin de sobre mi */
   /* Servicios */
   .fa-4x {
     font-size: 2.5em;
   }
-
   .lead {
     font-size: 18px !important;
   }
-
   .display-6 {
     font-size: 31px !important;
   }
-
   #servicios {
     height: auto;
   }
-
   /* Fin de servicios */
 }
-
 /* fin de estilo pagina  tablet */
 /* Estilo de pagina Mobile */
 @media only screen and (max-width: 640px) {
-
   /* Barra de navegacion */
   nav {
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
   }
-
   .logo {
     font-size: 18px !important;
   }
-
   /* Fin de barra de navegacion */
   /* Home */
   .bg-img {
     background-size: 700%;
   }
-
   .contenidoHome__titulo {
     font-size: 18px;
   }
-
   .contenidoHome__link {
     font-size: 18px;
   }
-
   .contenedorProyectos__titulo h2 {
     font-size: 17px;
   }
-
   /* Fin de Home */
   /* Contacto */
   .banner-contacto {
     background-size: 800%;
   }
-
   /* Fin de contacto */
   /* Proyecto */
   .banner-proyecto {
     background-size: 800%;
   }
-
   /* Fin de Proyecto */
   /* Sobre mi */
   #sobremi {
     height: auto;
   }
-
   /* Fin de Sobre mi */
 }
-
-/* Fin de estilo de pagina Mobile */
-/*# sourceMappingURL=estilos.css.map */
+/* Fin de estilo de pagina Mobile *//*# sourceMappingURL=estilos.css.map */

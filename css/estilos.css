@@ -1,5 +1,6 @@
-/* variables */
-/* Fin de variables */
+/* redes */
+/* Fin de redes */
+/* mixins */
 /* Reiniciar margenes, bordes, ect*/
 * {
   padding: 0;
@@ -102,8 +103,8 @@ video {
   width: 100%;
   height: 100%;
   background-color: rgb(6, 41, 82);
-  -webkit-backdrop-filter: blur(200px);
-          backdrop-filter: blur(200px);
+  -webkit-backdrop-filter: blur(300px);
+          backdrop-filter: blur(300px);
   opacity: 0.5;
   mix-blend-mode: overlay;
 }

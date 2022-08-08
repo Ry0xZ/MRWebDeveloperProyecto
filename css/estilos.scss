@@ -1,8 +1,25 @@
-/* variables */
+/* redes */
 
 $blanco: rgb(255, 255, 255);
 
-/* Fin de variables */
+$paletaDeColores:(
+    blanco #ffffff,
+    bordo #8f172fda,
+    negrotrans #0000007c,
+);
+
+/* Fin de redes */
+
+/* mixins */
+
+@mixin name {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    background-size: 200%;
+    animation: fondoanimado 90s infinite;
+}
 
 /* Reiniciar margenes, bordes, ect*/
 
@@ -100,7 +117,7 @@ video {
     width: 100%;
     height: 100%;
     background-color: rgb(6, 41, 82);
-    backdrop-filter: blur(200px);
+    backdrop-filter: blur(300px);
     opacity: 0.5;
     mix-blend-mode: overlay;
 }

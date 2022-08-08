@@ -84,6 +84,27 @@ html {
 
 }
 
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(6, 41, 82);
+    backdrop-filter: blur(200px);
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+
 .contenido {
     padding-top: 95px;
     height: auto !important;
@@ -94,21 +115,28 @@ html {
     background-color: rgba(0, 0, 0, 0.486);
     font-size: 40px;
     color: $blanco;
+    position: relative;
+    z-index: 2;
 }
 
 .contenidoHome__boton {
     margin-top: 30px;
     transition: all 300ms;
+    position: relative;
+    z-index: 2;
 }
 
 
 .botonHome__link {
     font-size: 25px;
     background-color: rgba(0, 0, 0, 0.486);
+    position: relative;
+    z-index: 2;
 
     a {
         text-decoration: none;
         color: $blanco;
+
         &:hover {
             color: rgb(0, 0, 0);
         }
@@ -126,9 +154,6 @@ html {
     border-radius: 50%;
 }
 
-.tarjetas {
-    height: 300px;
-}
 
 /* Fin de Estilo pagina Sobre mi */
 
@@ -147,8 +172,8 @@ html {
 .contenedorProyectos__titulo {
     padding-bottom: 15px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.322);
-    border-radius: 10px;
+/*     background-color: rgba(255, 255, 255, 0.322);
+    border-radius: 10px; */
 
 }
 
@@ -162,7 +187,7 @@ html {
 .contenedorProyectos {
     width: 600px;
     font-size: 13px;
-    min-height: calc(100vh - 100px - 200px);
+    /* min-height: calc(100vh - 100px - 200px); */
     text-transform: uppercase;
     margin-top: 106px;
 }
@@ -172,15 +197,56 @@ html {
     width: auto;
 }
 
+
+.gallery {
+    padding: 80px 0;
+    width: 100% !important;
+    img{
+        background-color: #14141483;
+        width: 100%;
+        padding: 15px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.89);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+
+#gallery-modal .modal-img {
+    width: 100%;
+}
+
+
 /* Fin de estilo pagina de proyecto */
 
 /* Estilo pagina de servicios */
 #servicios {
     padding-top: 110px;
     height: 800px;
+
     h3 {
-        font-size: 40px;
+        font-size: 30px;
     }
+}
+
+.tarjetas {
+    height: 330px;
+    min-width: 170px;
+    width: auto;
+}
+
+
+.b-servicios {
+    padding: 20px 0;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
+}
+
+.s-titulo {
+    font-weight: bold;
+    font-size: 20px !important;
 }
 
 /* Fin de estilo pagina de servicios */
@@ -250,13 +316,17 @@ footer {
         font-size: 26px;
         padding-left: 20px;
     }
+
     /* Fin de barra de navegacion */
 }
+
 /* fin de estilo pagina  escritorio */
 
 /* Estilo pagina  tablet */
 
 @media only screen and (max-width: 992px) {
+
+
 
     /* Barra de navegacion */
 
@@ -279,7 +349,7 @@ footer {
     .bg-img {
         background-size: 600%;
     }
-    
+
     .contenidoHome__titulo {
         font-size: 27px;
     }
@@ -287,12 +357,14 @@ footer {
     .contenidoHome__link {
         font-size: 27px;
     }
+
     /* Fin de Home */
 
     /* Contacto */
     .banner-contacto {
         background-size: 600%;
     }
+
     /* Fin de contacto */
 
     /* Proyecto */
@@ -307,11 +379,13 @@ footer {
     .contenedorProyectos__parrafo p {
         font-size: 16px;
     }
+
     /* Sobre mi */
     .perfil {
         width: 200px;
         height: 200px;
     }
+
     /* Fin de sobre mi */
 
     /* Servicios */
@@ -323,13 +397,14 @@ footer {
         font-size: 18px !important;
     }
 
-    .display-6 {
+/*     .display-6 {
         font-size: 31px !important;
-    }
+    } */
 
     #servicios {
         height: auto;
     }
+
     /* Fin de servicios */
 
 }
@@ -338,7 +413,14 @@ footer {
 
 /* Estilo de pagina Mobile */
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 767px) {
+
+    .row{
+        &>*{
+            padding: 0 !important;
+        }
+        padding: 0 !important;
+    }
 
     /* Barra de navegacion */
     nav {
@@ -349,12 +431,14 @@ footer {
     .logo {
         font-size: 18px !important;
     }
+
     /* Fin de barra de navegacion */
 
     /* Home */
     .bg-img {
         background-size: 700%;
     }
+
     .contenidoHome__titulo {
         font-size: 18px;
     }
@@ -366,24 +450,32 @@ footer {
     .contenedorProyectos__titulo h2 {
         font-size: 17px;
     }
+
     /* Fin de Home */
     /* Contacto */
     .banner-contacto {
         background-size: 800%;
     }
+
     /* Fin de contacto */
 
     /* Proyecto */
     .banner-proyecto {
         background-size: 800%;
     }
+
     /* Fin de Proyecto */
 
     /* Sobre mi */
     #sobremi {
         height: auto;
     }
+
     /* Fin de Sobre mi */
+
+    .b-servicios {
+        width: 102%;
+    }
 }
 
 /* Fin de estilo de pagina Mobile */

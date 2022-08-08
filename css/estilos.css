@@ -18,9 +18,9 @@ html {
   padding-left: 40px;
   color: rgb(255, 255, 255);
   -webkit-text-decoration-line: overline !important;
-  text-decoration-line: overline !important;
+          text-decoration-line: overline !important;
   -webkit-text-decoration-color: rgb(0, 0, 0) !important;
-  text-decoration-color: rgb(0, 0, 0) !important;
+          text-decoration-color: rgb(0, 0, 0) !important;
   font-family: "Bebas Neue", cursive;
   text-transform: uppercase;
   line-height: 80px;
@@ -29,7 +29,6 @@ html {
   width: -moz-max-content;
   width: max-content;
 }
-
 .logo span {
   color: rgba(143, 23, 47, 0.856);
 }
@@ -42,13 +41,12 @@ html {
   text-transform: uppercase;
   z-index: 99;
 }
-
 .nav-link:hover {
   color: rgba(143, 23, 47, 0.856);
   text-shadow: 1px 0px;
   text-decoration: overline;
   -webkit-text-decoration-color: rgb(255, 255, 255);
-  text-decoration-color: rgb(255, 255, 255);
+          text-decoration-color: rgb(255, 255, 255);
 }
 
 /* Fin de barra de navegacion */
@@ -61,18 +59,16 @@ html {
   width: auto;
   background-size: 200%;
   -webkit-animation: fondoanimado 90s infinite;
-  animation: fondoanimado 90s infinite;
+          animation: fondoanimado 90s infinite;
 }
 
 @-webkit-keyframes fondoanimado {
   0% {
     background-position: 30% 50%;
   }
-
   50% {
     background-position: 100% 50%;
   }
-
   100% {
     background-position: 0% 30%;
   }
@@ -82,14 +78,34 @@ html {
   0% {
     background-position: 30% 50%;
   }
-
   50% {
     background-position: 100% 50%;
   }
-
   100% {
     background-position: 0% 30%;
   }
+}
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(6, 41, 82);
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px);
+  opacity: 0.5;
+  mix-blend-mode: overlay;
 }
 
 .contenido {
@@ -101,23 +117,27 @@ html {
   background-color: rgba(0, 0, 0, 0.486);
   font-size: 40px;
   color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 2;
 }
 
 .contenidoHome__boton {
   margin-top: 30px;
   transition: all 300ms;
+  position: relative;
+  z-index: 2;
 }
 
 .botonHome__link {
   font-size: 25px;
   background-color: rgba(0, 0, 0, 0.486);
+  position: relative;
+  z-index: 2;
 }
-
 .botonHome__link a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-
 .botonHome__link a:hover {
   color: rgb(0, 0, 0);
 }
@@ -128,10 +148,6 @@ html {
   width: 240px;
   height: 240px;
   border-radius: 50%;
-}
-
-.tarjetas {
-  height: 300px;
 }
 
 /* Fin de Estilo pagina Sobre mi */
@@ -145,14 +161,14 @@ html {
   height: auto;
   background-size: 200%;
   -webkit-animation: fondoanimado 90s infinite;
-  animation: fondoanimado 90s infinite;
+          animation: fondoanimado 90s infinite;
 }
 
 .contenedorProyectos__titulo {
   padding-bottom: 15px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.322);
-  border-radius: 10px;
+  /*     background-color: rgba(255, 255, 255, 0.322);
+      border-radius: 10px; */
 }
 
 .contenedorProyectos__parrafo {
@@ -165,7 +181,7 @@ html {
 .contenedorProyectos {
   width: 600px;
   font-size: 13px;
-  min-height: calc(100vh - 100px - 200px);
+  /* min-height: calc(100vh - 100px - 200px); */
   text-transform: uppercase;
   margin-top: 106px;
 }
@@ -175,15 +191,52 @@ html {
   width: auto;
 }
 
+.gallery {
+  padding: 80px 0;
+  width: 100% !important;
+}
+.gallery img {
+  background-color: rgba(20, 20, 20, 0.5137254902);
+  width: 100%;
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.89);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#gallery-modal .modal-img {
+  width: 100%;
+}
+
 /* Fin de estilo pagina de proyecto */
 /* Estilo pagina de servicios */
 #servicios {
   padding-top: 110px;
   height: 800px;
 }
-
 #servicios h3 {
-  font-size: 40px;
+  font-size: 30px;
+}
+
+.tarjetas {
+  height: 330px;
+  min-width: 170px;
+  width: auto;
+}
+
+.b-servicios {
+  padding: 20px 0;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 50vh;
+}
+
+.s-titulo {
+  font-weight: bold;
+  font-size: 20px !important;
 }
 
 /* Fin de estilo pagina de servicios */
@@ -203,7 +256,7 @@ html {
   height: 1000px;
   background-size: 200%;
   -webkit-animation: fondoanimado 90s infinite;
-  animation: fondoanimado 90s infinite;
+          animation: fondoanimado 90s infinite;
 }
 
 .formulario {
@@ -235,146 +288,124 @@ footer {
 /*------------------ RESPONSIVE ------------------*/
 /* Estilo pagina  escritorio */
 @media only screen and (max-width: 1366px) {
-
   /* Barra de navegacion */
   .logo {
     font-size: 26px;
     padding-left: 20px;
   }
-
   /* Fin de barra de navegacion */
 }
-
 /* fin de estilo pagina  escritorio */
 /* Estilo pagina  tablet */
 @media only screen and (max-width: 992px) {
-
   /* Barra de navegacion */
   .logo {
     font-size: 20px !important;
     padding: 0 0px !important;
     padding-top: 10px;
   }
-
   .navbar-toggler-icon {
     width: 1.4em;
     height: 1.4em;
     color: rgb(255, 255, 255);
   }
-
   /* Fin de barra de navegacion */
   /* Home */
   .bg-img {
     background-size: 600%;
   }
-
   .contenidoHome__titulo {
     font-size: 27px;
   }
-
   .contenidoHome__link {
     font-size: 27px;
   }
-
   /* Fin de Home */
   /* Contacto */
   .banner-contacto {
     background-size: 600%;
   }
-
   /* Fin de contacto */
   /* Proyecto */
   .banner-proyecto {
     background-size: 600%;
   }
-
   .contenedorProyectos__titulo h2 {
     font-size: 18px;
   }
-
   .contenedorProyectos__parrafo p {
     font-size: 16px;
   }
-
   /* Sobre mi */
   .perfil {
     width: 200px;
     height: 200px;
   }
-
   /* Fin de sobre mi */
   /* Servicios */
   .fa-4x {
     font-size: 2.5em;
   }
-
   .lead {
     font-size: 18px !important;
   }
-
-  .display-6 {
-    font-size: 31px !important;
-  }
-
+  /*     .display-6 {
+          font-size: 31px !important;
+      } */
   #servicios {
     height: auto;
   }
-
   /* Fin de servicios */
 }
-
 /* fin de estilo pagina  tablet */
 /* Estilo de pagina Mobile */
-@media only screen and (max-width: 640px) {
-
+@media only screen and (max-width: 767px) {
+  .row {
+    padding: 0 !important;
+  }
+  .row > * {
+    padding: 0 !important;
+  }
   /* Barra de navegacion */
   nav {
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
   }
-
   .logo {
     font-size: 18px !important;
   }
-
   /* Fin de barra de navegacion */
   /* Home */
   .bg-img {
     background-size: 700%;
   }
-
   .contenidoHome__titulo {
     font-size: 18px;
   }
-
   .contenidoHome__link {
     font-size: 18px;
   }
-
   .contenedorProyectos__titulo h2 {
     font-size: 17px;
   }
-
   /* Fin de Home */
   /* Contacto */
   .banner-contacto {
     background-size: 800%;
   }
-
   /* Fin de contacto */
   /* Proyecto */
   .banner-proyecto {
     background-size: 800%;
   }
-
   /* Fin de Proyecto */
   /* Sobre mi */
   #sobremi {
     height: auto;
   }
-
   /* Fin de Sobre mi */
+  .b-servicios {
+    width: 102%;
+  }
 }
-
-/* Fin de estilo de pagina Mobile */
-/*# sourceMappingURL=estilos.css.map */
+/* Fin de estilo de pagina Mobile *//*# sourceMappingURL=estilos.css.map */

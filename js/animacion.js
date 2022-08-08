@@ -10,5 +10,14 @@ window.addEventListener('scroll', function() {
 
 window.addEventListener("scroll", function() {
     var nav = document.querySelector("nav");
-    nav.classList.toggle("bg-dark",window.scrollY>0);
+    nav.classList.toggle("bg-dark",window.scrollY>95);
+})
+
+document.addEventListener("click",function (e){
+    if(e.target.classList.contains("gallery-item")){
+        const src = e.target.getAttribute("src");
+        document.querySelector(".modal-img").src = src;
+        const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
+        myModal.show();
+    }
 })

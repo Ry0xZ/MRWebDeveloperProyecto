@@ -2,7 +2,6 @@
 /* Fin de mapas y variables */
 /* mixins */
 /* Fin de mixins */
-/* extends */
 /* Reiniciar margenes, bordes, ect*/
 * {
   padding: 0;
@@ -166,8 +165,6 @@ video, .capa {
 .contenedorProyectos__titulo {
   padding-bottom: 15px;
   text-align: center;
-  /*     background-color: rgba(255, 255, 255, 0.322);
-      border-radius: 10px; */
 }
 
 .contenedorProyectos__parrafo {
@@ -180,7 +177,6 @@ video, .capa {
 .contenedorProyectos {
   width: 600px;
   font-size: 13px;
-  /* min-height: calc(100vh - 100px - 200px); */
   text-transform: uppercase;
   margin-top: 106px;
 }
@@ -353,9 +349,6 @@ footer {
   .lead {
     font-size: 18px !important;
   }
-  /*     .display-6 {
-          font-size: 31px !important;
-      } */
   #servicios {
     height: auto;
   }

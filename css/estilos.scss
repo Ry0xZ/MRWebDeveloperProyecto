@@ -24,7 +24,6 @@ $paletaDeColores:(
 
 /* Fin de mixins */
 
-/* extends */
 
 /* Reiniciar margenes, bordes, ect*/
 
@@ -179,9 +178,6 @@ video {
 .contenedorProyectos__titulo {
     padding-bottom: 15px;
     text-align: center;
-/*     background-color: rgba(255, 255, 255, 0.322);
-    border-radius: 10px; */
-
 }
 
 .contenedorProyectos__parrafo {
@@ -194,7 +190,6 @@ video {
 .contenedorProyectos {
     width: 600px;
     font-size: 13px;
-    /* min-height: calc(100vh - 100px - 200px); */
     text-transform: uppercase;
     margin-top: 106px;
 }
@@ -406,9 +401,6 @@ footer {
         font-size: 18px !important;
     }
 
-/*     .display-6 {
-        font-size: 31px !important;
-    } */
 
     #servicios {
         height: auto;

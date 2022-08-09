@@ -1,6 +1,8 @@
-/* redes */
-/* Fin de redes */
+/* mapas y variables */
+/* Fin de mapas y variables */
 /* mixins */
+/* Fin de mixins */
+/* extends */
 /* Reiniciar margenes, bordes, ect*/
 * {
   padding: 0;
@@ -17,7 +19,7 @@ html {
 .logo {
   font-size: 30px !important;
   padding-left: 40px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   -webkit-text-decoration-line: overline !important;
           text-decoration-line: overline !important;
   -webkit-text-decoration-color: rgb(0, 0, 0) !important;
@@ -31,23 +33,23 @@ html {
   width: max-content;
 }
 .logo span {
-  color: rgba(143, 23, 47, 0.856);
+  color: rgba(143, 23, 47, 0.8549019608);
 }
 
 .nav-link {
   font-size: 16px;
   margin: 10px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   z-index: 99;
 }
 .nav-link:hover {
-  color: rgba(143, 23, 47, 0.856);
+  color: rgba(143, 23, 47, 0.8549019608);
   text-shadow: 1px 0px;
   text-decoration: overline;
-  -webkit-text-decoration-color: rgb(255, 255, 255);
-          text-decoration-color: rgb(255, 255, 255);
+  -webkit-text-decoration-color: #ffffff;
+          text-decoration-color: #ffffff;
 }
 
 /* Fin de barra de navegacion */
@@ -58,6 +60,7 @@ html {
   background-size: cover;
   background-position: center;
   width: auto;
+  height: auto;
   background-size: 200%;
   -webkit-animation: fondoanimado 90s infinite;
           animation: fondoanimado 90s infinite;
@@ -86,7 +89,7 @@ html {
     background-position: 0% 30%;
   }
 }
-video {
+video, .capa {
   position: absolute;
   top: 0;
   left: 0;
@@ -97,11 +100,6 @@ video {
 }
 
 .capa {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-color: rgb(6, 41, 82);
   -webkit-backdrop-filter: blur(300px);
           backdrop-filter: blur(300px);
@@ -115,9 +113,9 @@ video {
 }
 
 .contenidoHome__titulo {
-  background-color: rgba(0, 0, 0, 0.486);
+  background-color: rgba(0, 0, 0, 0.4862745098);
   font-size: 40px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   position: relative;
   z-index: 2;
 }
@@ -131,13 +129,13 @@ video {
 
 .botonHome__link {
   font-size: 25px;
-  background-color: rgba(0, 0, 0, 0.486);
+  background-color: rgba(0, 0, 0, 0.4862745098);
   position: relative;
   z-index: 2;
 }
 .botonHome__link a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 .botonHome__link a:hover {
   color: rgb(0, 0, 0);
@@ -176,7 +174,7 @@ video {
   font-weight: bold;
   font-size: large;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
 .contenedorProyectos {
@@ -213,7 +211,7 @@ video {
 /* Estilo pagina de servicios */
 #servicios {
   padding-top: 110px;
-  height: 800px;
+  height: auto;
 }
 #servicios h3 {
   font-size: 30px;
@@ -254,7 +252,7 @@ video {
   background-size: cover;
   background-position: center;
   width: auto;
-  height: 1000px;
+  height: auto;
   background-size: 200%;
   -webkit-animation: fondoanimado 90s infinite;
           animation: fondoanimado 90s infinite;
@@ -295,6 +293,11 @@ footer {
     padding-left: 20px;
   }
   /* Fin de barra de navegacion */
+  /* Contacto */
+  .banner-contacto {
+    background-size: 500%;
+  }
+  /* Fin de contacto */
 }
 /* fin de estilo pagina  escritorio */
 /* Estilo pagina  tablet */
@@ -308,7 +311,7 @@ footer {
   .navbar-toggler-icon {
     width: 1.4em;
     height: 1.4em;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
   }
   /* Fin de barra de navegacion */
   /* Home */

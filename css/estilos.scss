@@ -1,25 +1,30 @@
-/* redes */
+/* mapas y variables */
 
-$blanco: rgb(255, 255, 255);
+$blanco: #ffffff;
 
 $paletaDeColores:(
-    blanco #ffffff,
-    bordo #8f172fda,
-    negrotrans #0000007c,
+    blanco: $blanco,
+    bordo: #8f172fda,
+    negrotrans: #0000007c,
 );
 
-/* Fin de redes */
+/* Fin de mapas y variables */
 
 /* mixins */
 
-@mixin name {
+@mixin fondo ($height,){
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: auto;
+    height: $height;
     background-size: 200%;
     animation: fondoanimado 90s infinite;
 }
+
+/* Fin de mixins */
+
+/* extends */
 
 /* Reiniciar margenes, bordes, ect*/
 
@@ -51,7 +56,7 @@ html {
     width: max-content;
 
     span {
-        color: rgba(143, 23, 47, 0.856);
+        color: map-get( $paletaDeColores , bordo );
     }
 }
 
@@ -59,16 +64,16 @@ html {
 .nav-link {
     font-size: 16px;
     margin: 10px;
-    color: $blanco;
+    color: map-get( $paletaDeColores , blanco );
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     z-index: 99;
 
     &:hover {
-        color: rgba(143, 23, 47, 0.856);
+        color: map-get( $paletaDeColores , bordo );
         text-shadow: 1px 0px;
         text-decoration: overline;
-        text-decoration-color: $blanco;
+        text-decoration-color: map-get( $paletaDeColores , blanco );
     }
 }
 
@@ -78,12 +83,7 @@ html {
 /* Estilo de pagina Home */
 .bg-img {
     background-image: linear-gradient(135deg, rgba(0, 32, 36, 0.774) 20%, rgba(10, 173, 255, 0.733) 50%, rgba(0, 213, 255, 0.486) 100%), url(../Media/fondo.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: auto;
-    background-size: 200%;
-    animation: fondoanimado 90s infinite;
+    @include fondo (auto);
 }
 
 @keyframes fondoanimado {
@@ -111,11 +111,7 @@ video {
 }
 
 .capa {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    @extend video;
     background-color: rgb(6, 41, 82);
     backdrop-filter: blur(300px);
     opacity: 0.5;
@@ -129,9 +125,9 @@ video {
 
 
 .contenidoHome__titulo {
-    background-color: rgba(0, 0, 0, 0.486);
+    background-color: map-get( $paletaDeColores , negrotrans );
     font-size: 40px;
-    color: $blanco;
+    color: map-get( $paletaDeColores , blanco );
     position: relative;
     z-index: 2;
 }
@@ -146,13 +142,13 @@ video {
 
 .botonHome__link {
     font-size: 25px;
-    background-color: rgba(0, 0, 0, 0.486);
+    background-color: map-get( $paletaDeColores , negrotrans );
     position: relative;
     z-index: 2;
 
     a {
         text-decoration: none;
-        color: $blanco;
+        color: map-get( $paletaDeColores , blanco );
 
         &:hover {
             color: rgb(0, 0, 0);
@@ -177,13 +173,7 @@ video {
 /* Estilo pagina de proyecto */
 .banner-proyecto {
     background: linear-gradient(135deg, rgba(0, 32, 36, 0.774) 20%, rgba(10, 173, 255, 0.733) 50%, rgba(16, 178, 211, 0.486) 100%), url(../Media/fondoproyectos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: auto;
-    height: auto;
-    background-size: 200%;
-    animation: fondoanimado 90s infinite;
+    @include fondo (auto);
 }
 
 .contenedorProyectos__titulo {
@@ -198,7 +188,7 @@ video {
     font-weight: bold;
     font-size: large;
     text-align: center;
-    color: $blanco;
+    color: map-get( $paletaDeColores , blanco );
 }
 
 .contenedorProyectos {
@@ -238,7 +228,7 @@ video {
 /* Estilo pagina de servicios */
 #servicios {
     padding-top: 110px;
-    height: 800px;
+    height: auto;
 
     h3 {
         font-size: 30px;
@@ -278,13 +268,7 @@ video {
 
 .banner-contacto {
     background: linear-gradient(135deg, rgba(0, 32, 36, 0.774) 20%, rgba(10, 173, 255, 0.733) 50%, rgba(16, 178, 211, 0.486) 100%), url(../Media/fondocontacto.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: auto;
-    height: 1000px;
-    background-size: 200%;
-    animation: fondoanimado 90s infinite;
+    @include fondo (auto);
 }
 
 .formulario {
@@ -335,6 +319,14 @@ footer {
     }
 
     /* Fin de barra de navegacion */
+
+        /* Contacto */
+        .banner-contacto {
+            background-size: 500%;
+        }
+    
+        /* Fin de contacto */
+
 }
 
 /* fin de estilo pagina  escritorio */
@@ -357,7 +349,7 @@ footer {
     .navbar-toggler-icon {
         width: 1.4em;
         height: 1.4em;
-        color: $blanco;
+        color: map-get( $paletaDeColores , blanco );
     }
 
     /* Fin de barra de navegacion */

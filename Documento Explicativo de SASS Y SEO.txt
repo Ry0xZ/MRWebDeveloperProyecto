@@ -1,0 +1,21 @@
+
+MAPA:
+cree el mapa en la linea 5 llamado $paletaDeColores
+lo use en las lineas:
+54, 62, 68, 71, 134, 155, 201
+
+MIXINS:
+cree el mixin en la linea 15 llamado fondo
+lo use en las lineas
+84, 178, 273
+
+EXTEND:
+agregue @extend en la linea 114, a la class .capa de los valores de la etiqueta video
+
+SEO:
+agregue:
+*meta name="description"
+*meta name="keywords"
+*meta name="robots"
+dentro de <head> en mi pagina index que es mi unica pagina (onepage) para poder tener un mejor posicionamiento en los buscadores.
+ademas de tener los encabezados de cada pagina

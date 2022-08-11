@@ -111,10 +111,9 @@ video {
 
 .capa {
     @extend video;
-    background-color: rgb(6, 41, 82);
-    backdrop-filter: blur(300px);
-    opacity: 0.5;
-    mix-blend-mode: overlay;
+    background: url(../Media/pattern.png) repeat;
+    opacity: 0.8;
+
 }
 
 .contenido {

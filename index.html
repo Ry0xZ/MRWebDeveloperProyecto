@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Matias Romero, desarrollador Web Freelance, programación y desarrollo de Sitios Web en conjunto con diseñadores web. Marketing en redes sociales">
-    <meta name="keywords" content="web developer, desarrollador web freelance, programacion web, programacion freelance, programador php, programacion web, programadores web, programador web en Argentina, programador web en Latinoamérica, programador freelance en España, marketing en redes sociales, social media">
+    <meta name="description"
+        content="Matias Romero, desarrollador Web Freelance, programación y desarrollo de Sitios Web en conjunto con diseñadores web. Marketing en redes sociales">
+    <meta name="keywords"
+        content="web developer, desarrollador web freelance, programacion web, programacion freelance, programador php, programacion web, programadores web, programador web en Argentina, programador web en Latinoamérica, programador freelance en España, marketing en redes sociales, social media">
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,35 +41,42 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sobremi">Sobre mí</a>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Acerca de
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#sobremi">Sobre Mi</a></li>
+                                <li><a class="dropdown-item" href="#preguntasFrecuentes">Preguntas Frecuentes</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#proyectos">Proyectos</a>
+                            <a class="nav-link" href="portfolio.html">mis trabajos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#servicios">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto">Contacto</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
-            </div>
+                </div>
         </nav>
         <!-- Fin de barra de navegacion -->
     </header>
     <main>
         <!-- Contenido banner Home -->
         <section class="container-fluid">
-            <div class=" w-100 vh-100  d-flex  flex-column justify-content-center align-items-center">
+            <div class="  w-100 vh-100  d-flex  flex-column justify-content-center align-items-center">
                 <video muted autoplay loop>
                     <source src="./Media/video.mp4" type="video/mp4"></video>
                 <div class="capa"></div>
                 <div class="content text-center">
                     <div class="contenido">
-                        <h2 class="contenidoHome__titulo">Potencie la venta de sus productos y servicios</h2>
+                        <h1 class="contenidoHome__titulo">Potencie la venta de sus productos y servicios</h1>
                         <h3 class="contenidoHome__titulo">Asesoramiento y presupuesto sin cargo.</h3>
-                        <div class="btnn text center">
+                        <div class="btnn text center my-5">
                             <button type="button" class=" botonHome__link btn btn-outline-light w-10 rounded-pill"><a
                                     href="#servicios"> Mas información</a></button>
                         </div>
@@ -76,196 +85,312 @@
             </div>
         </section>
         <!-- Fin de Contenido banner Home -->
+        <section class="container-fluid banner-p d-flex align-items-center ">
+            <div class="capa2"></div>
+            <div class="w-100 text-center">
+                <h3 class=" "> ¿Buscas un Diseñador Web Freelance?</h3>
+                <div class="btnn text center my-5">
+                    <button type="button " class=" botonHome__link btn btn-outline-light w-10 rounded-pill"><a
+                            href="/contacto.html">¡Contáctame!</a></button>
+                </div>
+            </div>
+        </section>
         <!-- Sobre mi -->
-        <section class="container my-5" id="sobremi">
+        <section class="container my-5 h-100" id="sobremi">
             <div class=" row">
                 <div class="col-md-5 my-5 d-flex justify-content-center">
                     <img src="Media/perfil.jpeg" class="perfil" alt="mi perfil">
                 </div>
                 <div class="col-md-7">
                     <h3 class="display-5">Sobre <span class="text-danger">Mi</span></h3>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nihil ipsum non
-                        corrupti culpa aut! Eligendi, rerum! Assumenda ullam facilis dolore. Inventore, sed magnam iusto
-                        omnis delectus repudiandae consectetur cumque.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nihil ipsum non
-                        corrupti culpa aut! Eligendi, rerum! Assumenda ullam facilis dolore. Inventore, sed magnam iusto
-                        omnis delectus repudiandae consectetur cumque.</p>
+                    <p class="lead">He desarrollado páginas web para importantes clientes de Latinoamérica y del
+                        exterior, esto me permitió adquirir una gran experiencia como programador web.
+                        Me agrada mucho mi trabajo y, por ello, intento estar al día con las ultimas tecnologias web.
+                        Actualmente ofrezco mis servicios a clientes de Latinoamérica y de distintas partes del mundo.
+                        (paises de habla Hispana).</p>
                     <button type="button" class="btn btn-dark shadow rounded-pill">Descargar CV</button>
+                </div>
+            </div>
+            <div class="row my-5  w-100 justify-content-center">
+                <div class="col-md-7">
+                    <h3 class="display-5 d-flex justify-content-center align-items-center">Skills</h3>
+                    <h6 class="display-7 my-5">DISEÑO DE INTERFASES (UI)</h6>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-label="Animated striped example" aria-valuenow="99" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 99%">99%</div>
+                    </div>
+                    <h6 class="display-7 my-5">DISEÑO DE EXPERIENCIA DE USUARIO (UX)</h6>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-label="Animated striped example" aria-valuenow="98" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 98%">98%</div>
+                    </div>
+                    <h6 class="display-7 my-5">DISEÑO DE INTERACCIÓN (IXD)</h6>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-label="Animated striped example" aria-valuenow="96" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 95%">95%</div>
+                    </div>
+                    <h6 class="display-7 my-5">POSICIONAMIENTO EN GOOGLE (SEO)</h6>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-label="Animated striped example" aria-valuenow="97" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 97%">97%</div>
+                    </div>
+                    <h6 class="display-7 my-5">PERFORMANCE</h6>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-label="Animated striped example" aria-valuenow="98" aria-valuemin="0"
+                            aria-valuemax="100" style="width: 98%">98%</div>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Fin Sobre mi -->
-        <!-- Proyectos -->
-        <div class="banner-proyecto w-100  d-flex  justify-content-center align-items-center">
-            <section class="container my-5" id="proyectos">
-                <div class="w-100  d-flex flex-wrap justify-content-center align-items-center">
-                    <div class="contenedorProyectos">
-                        <div class="contenedorProyectos__titulo">
-                            <h2> <span class="text-danger"> Galeria de Proyectos Terminados</span></h2>
+        <!-- Preguntas frecuentes -->
+        <div class="banner-pfrecuentes w-100  d-flex  justify-content-center align-items-center"
+            id="preguntasFrecuentes">
+            <section class="container my-5">
+                <div class="w-100">
+                    <h3>Preguntas Frecuentes</h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <strong>A medida que trabaja en mi nueva web, puedo ver avances?</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Sí. Durante la etapa de desarrollo, utilizo un servidor de prueba (te brindo
+                                    un link específico) para que puedas ver el <strong>diseño web en proceso</strong> y
+                                    las
+                                    modificaciones generadas en la etapa de revisión.
+
+                                    Dado que se trata de un servicio profesional de alta calidad, por prolijidad sólo
+                                    utilizare el dominio real de tu empresa una vez que la web esté lista y chequeada
+                                    para ser subida.
+                                </div>
+                            </div>
                         </div>
-                        <div class="contenedorProyectos__parrafo">
-                            <p>Aquí podrás ver algunos de mis trabajos de desarrollo web, como así tambien las
-                                tecnologías
-                                empleadas.</p>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <strong>¿En qué área geográfica provees servicios?</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Si bien realizo trabajos para diferentes partes del mundo, me enfoco de forma
+                                    especial a trabajos de diseño web en el país.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <strong>¿Realizas modificaciones sobre sitios web existentes?</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Si. Efectivamente, puedo realizar modificaciones sobre sitios web ya existentes.
+                                    Es probable que pueda hacerte algunas sugerencias sobre oportunidades de mejora en
+                                    aspectos visuales y de marketing digital si fuera necesario.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <strong>¿Cuánto tiempo lleva disponer de mi nueva página web?</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Cada proyecto es particular y diferente, pero usualmente la mayoría de los
+                                    desarrollos web se completan en un plazo no mayor a 30 días desde la confirmación
+                                    del trabajo, contando con la información requerida.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <strong>¿Cuánto cuesta realizar una página web?</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Ciertamente, cada proyecto en diseño web es diferente. Por ello, la cantidad de
+                                    tiempo de desarrollo asociado varía de proyecto a proyecto y por ende su costo. Sin
+                                    embargo, para simplificar el proceso de presupuestación, <strong><a
+                                            href="contacto.html">podés ponerte en contacto
+                                            conmigo</a></strong>, te hare algunas preguntas simples que son claves para
+                                    entender tus
+                                    requerimientos y te presentare la propuesta más conveniente.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    <strong>Mi nueva página web, ¿funcionará correctamente en celulares
+                                        smartphone?</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Utilizo la más moderna tecnología responsive (“adaptativa”) como una
+                                    característica incluida en todos mis diseños. Los contenidos de tu web se
+                                    ajustarán automáticamente a los tamaños de diferentes dispositivos como celulares y
+                                    tablets, logrando una óptima experiencia del usuario en cada caso. Esto constituye
+                                    una muy importante ventaja competitiva online.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                    <section class="gallery w-100 min-vh100">
-                        <div class="container">
-                            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
-                                <div class="col">
-                                    <img src="./Media/Proyectos/cavera.jpg" class="gallery-item" alt="Proyecto Cavera">
-                                </div>
-                                <div class="col">
-                                    <img src="./Media/Proyectos/inheco.jpg" class="gallery-item" alt="Proyecto inheco">
-                                </div>
-                                <div class="col">
-                                    <img src="./Media/Proyectos/maquinar.jpg" class="gallery-item"
-                                        alt="Proyecto maquinar">
-                                </div>
-                                <div class="col">
-                                    <img src="./Media/Proyectos/pedidos24.jpg" class="gallery-item"
-                                        alt="Proyecto pedidos24">
-                                </div>
-                                <div class="col">
-                                    <img src="./Media/Proyectos/mundofitness.jpg" class="gallery-item"
-                                        alt="Proyecto mundofitness">
-                                </div>
-                                <div class="col">
-                                    <img src="./Media/Proyectos/refractory.jpg" class="gallery-item"
-                                        alt="Proyecto refractory">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Modal -->
-                    <div class="modal" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal modal-lg" style="min-width: 40%;">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <img src="./Media/Proyectos/cavera.jpg" class="modal-img" alt="modal img">
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
             </section>
+        </div>
+        </section>
         <!-- Fin Proyectos -->
         <!-- Servicios -->
-        <section class="container-fluid  my-5 " id="servicios">
-            <div class="row w-100">
-                <div class="col-sm-12 col-md-4">
-                    <img src="./Media/servicios.jpg" class="b-servicios"
-                        alt="Proyecto refractory">
+        <section class="container my-5 " id="servicios">
+            <div class="row">
+                <div class=" col-md-4 d-flex align-items-center">
+                    <img src="./Media/servicios.jpg" class="b-servicios " alt="cliente servicios">
                 </div>
-                <div class="col-md-8 d-flex flex-wrap justify-content-center">
+                <div class="container col-sm-12 col-md-8 d-flex flex-wrap justify-content-center">
                     <div class="row">
-                <h3 class="col-lg-12 display5"> Mis <span class="text-danger">Servicios</span></h3>
-            </div>
-            <div class="row ">
-                <div class="col-sm-12 col-md-4 ">
-                    <div class="box shadow p2 my-3 tarjetas">
-                        <div class="icon text-center my-3">
-                            <i class="fa-solid fa-pencil fa-4x text-danger"></i>
+                        <h3 class="col-lg-12 display5"> Mis <span class="text-danger">Servicios</span></h3>
+                    </div>
+                    <div class="card-columns">
+                        <div class="box shadow card my-5">
+                            <i class="text-center fa-solid fa-pencil fa-4x text-danger"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Diseño Integral</h5>
+                                <p class="card-text">Acompaño a mis clientes a construir juntos el diseño de
+                                    la
+                                    identidad
+                                    de su marca con todos los elementos
+                                    gráficos y digitales que necesite.</p>
+                            </div>
                         </div>
-                        <h3 class="display-6 text-center s-titulo">Diseño Integral</h3>
-                        <p class="text-center lead">Acompaño a mis clientes a construir juntos el diseño de la identidad
-                            de su marca con todos los elementos
-                            gráficos y digitales que necesite.</p>
+                        <div class="box shadow card my-5">
+                            <i class="text-center fa-solid fa-fill-drip fa-4x text-danger"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Diseño web</h5>
+                                <p class="card-text">Diseño páginas web a medida. Siempre bajo estándares web
+                                    y
+                                    velando
+                                    por la mejor performance.</p>
+                            </div>
+                        </div>
+                        <div class="box shadow card my-5">
+                            <i class="text-center fa-solid fa-magnifying-glass fa-4x text-danger"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Posicionamiento web</h5>
+                                <p class="card-text">Realizo el análisis y la estrategia SEO para posicionar una
+                                    web en
+                                    Google en las primeras posiciones en las
+                                    búsquedas online.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-12  col-md-4">
-                    <div class="box shadow p2 my-3 tarjetas">
-                        <div class="icon text-center my-3">
-                            <i class="fa-solid fa-fill-drip fa-4x text-danger"></i>
-                        </div>
-                        <h3 class="display-6 text-center s-titulo">Diseño web</h3>
-                        <p class="text-center lead">Diseño páginas web a medida. Siempre bajo estándares web y velando
-                            por la mejor performance.</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="box shadow p2 my-3 tarjetas">
-                        <div class="icon text-center my-3">
-                            <i class="fa-solid fa-magnifying-glass fa-4x text-danger"></i>
-                        </div>
-                        <h3 class="display-6 text-center s-titulo">Posicionamiento web</h3>
-                        <p class="text-center lead">Realizo el análisis y la estrategia SEO para posicionar una web en
-                            Google en las primeras posiciones en las
-                            búsquedas online.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-            </div>
+
         </section>
         <!--  Fin Servicios -->
-        <!-- Contacto -->
-        <div class="banner-contacto w-100 d-flex justify-content-center align-items-center">
-            <section class="container my-5" id="contacto">
-                <div class="w-100 d-flex justify-content-center align-items-center">
-                    <div class="formulario content text-center">
-                        <form class="contenedor-form">
-                            <div class="mb-3 col-auto">
-                                <h2>Formulario de Contacto</h2>
-                                <label for="exampleInputEmail1" class="form-label">Nombre<span>*</span></label>
-                                <input type="text" class="form-control" id="formGroupExampleInput" required>
-                            </div>
-                            <div class="mb-3 col-auto">
-                                <label for="exampleInputPassword1" class="form-label">Apellido<span>*</span></label>
-                                <input type="text" class="form-control" id="formGroupExampleInput" required>
-                            </div>
-                            <div class="mb-3 col-auto row-auto">
-                                <label for="exampleInputPassword1" class="form-label">Email<span>*</span></label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" required>
-                            </div>
-                            <label for="">Tipo de Proyecto</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Seleccionar</option>
-                                <option value="1">Diseño web desde 0</option>
-                                <option value="2">Implementacion de nuevas funciones</option>
-                                <option value="3">Renovacion de diseño</option>
-                            </select>
-                            <div class="mb-3 col-auto">
-                                <label for="exampleFormControlTextarea1" class="form-label">Describa Su Proyecto y
-                                    Requisitos
-                                    <span>*</span></label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                    required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
-                        </form>
-                    </div>
-            </section>
-        </div>
-        <!-- Fin Contacto -->
+        <!--  -->
+        <section class="container-fluid" style="background-color:rgb(153, 11, 23)">
+            <div class="container my-5">
+                <h2 class="text-center" style="color:#ffffff;">"Diseño experiencias digitales únicas centradas en el usuario, que impactan
+                    positivamente en la
+                    satisfacción de los mismos"</h2>
+            </div>
+        </section>
     </main>
     <!--Mi Footer-->
     <div class="footer container-fluid">
-        <footer class="text-center text-lg-start" style="background-color: #1b1a1a;">
-            <div class="container d-flex justify-content-center py-5">
-                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2"
-                    style="background-color: rgba(255, 255, 255, 0.26);">
-                    <i class="fab fa-facebook-f"></i>
-                </button>
-                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2"
-                    style="background-color: rgba(255, 255, 255, 0.26);">
-                    <i class="fab fa-youtube"></i>
-                </button>
-                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2"
-                    style="background-color: rgba(255, 255, 255, 0.26);">
-                    <i class="fab fa-instagram"></i>
-                </button>
-                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2"
-                    style="background-color: rgba(255, 255, 255, 0.26);">
-                    <i class="fab fa-twitter"></i>
-                </button>
+        <footer>
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="footer-contenido">
+                            <h3>Mapa del Sitio</h3>
+                            <div class="">
+                                <ul class="menu">
+                                    <li class="menu-item"><a href="#">Inicio</a></li>
+                                    <li class="menu-item"><a href="#sobremi">Sobre mi</a></li>
+                                    <li class="menu-item"><a href="#proyectos">Portfolio</a></li>
+                                    <li class="menu-item"><a href="#servicios">Servicios</a></li>
+                                    <li class="menu-item">
+                                        <a href="#">Preguntas
+                                            Frecuentes</a>
+                                    </li>
+                                    <li class="menu-item"><a href="contacto.html">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 ">
+                        <div class="footer-contenido">
+                            <h3>Info de contacto</h3>
+                            <div class="menu-servicios-container contacto">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="https://wa.me/+541132296417"><i class="fab fa-whatsapp icon "></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:romeromatias92@gmail.com"><i class="fab fa-google icon"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="footer-contenido">
+                            <h3>Seguime en las Redes</h3>
+                            <div class="redes">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="fab fa-facebook-f icon"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-twitter icon"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-linkedin-in icon"></i></a></li>
+                                    <li>
+                                        <a href=""><i class="fab fa-google-plus-g icon"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Copyright -->
-            <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                copyright © 2022. Todos los derechos reservados
+            <div class="container">
+                <div class="row">
+                    <div class=" text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                        copyright © 2022. Todos los derechos reservados
+                    </div>
+                </div>
             </div>
             <!-- Copyright -->
         </footer>

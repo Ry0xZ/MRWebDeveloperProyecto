@@ -290,10 +290,13 @@ picture:hover::after {
   font-size: 30px;
 }
 
-.tarjetas {
-  height: 330px;
-  min-width: 170px;
-  width: auto;
+.tarjetas:hover {
+  background-color: #212529;
+  scale: 1.05;
+  box-shadow: inset 1px 1px 22px 4px rgba(255, 0, 0, 0.337254902);
+}
+.tarjetas:hover h5, .tarjetas:hover p {
+  color: #ffffff;
 }
 
 .b-servicios {
@@ -327,6 +330,7 @@ picture:hover::after {
   -o-object-fit: cover;
      object-fit: cover;
   background-attachment: fixed;
+  height: auto;
   /* @include fondo (auto); */
 }
 
@@ -337,13 +341,13 @@ picture:hover::after {
 
 .form {
   padding-top: 400px;
+  padding-bottom: 200px;
 }
 
 .contenedor-form {
   background-color: rgba(255, 255, 255, 0.5333333333);
   padding: 50px 10px;
   border-radius: 10px;
-  margin: 10px;
   box-shadow: inset 1px 1px 22px 4px rgba(0, 0, 0, 0.85);
 }
 
@@ -366,7 +370,7 @@ footer {
 .footer-contenido {
   color: #000000;
   font-family: "Roboto", sans-serif;
-  height: 250px;
+  min-height: 105px;
 }
 .footer-contenido h3 {
   border-left: 8px solid rgba(143, 23, 47, 0.8549019608);
@@ -503,6 +507,10 @@ footer {
   background: #dd4b39;
 }
 
+.copyright {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 /* Fin de estilo footer */
 /*------------------ RESPONSIVE ------------------*/
 /* Estilo pagina  escritorio */
@@ -513,11 +521,6 @@ footer {
     padding-left: 20px;
   }
   /* Fin de barra de navegacion */
-  /* Contacto */
-  .banner-contacto {
-    background-size: 500%;
-  }
-  /* Fin de contacto */
 }
 /* fin de estilo pagina  escritorio */
 /* Estilo pagina  tablet */
@@ -545,11 +548,6 @@ footer {
     font-size: 27px;
   }
   /* Fin de Home */
-  /* Contacto */
-  .banner-contacto {
-    background-size: 600%;
-  }
-  /* Fin de contacto */
   /* Proyecto */
   .banner-proyecto {
     background-size: 600%;
@@ -581,12 +579,6 @@ footer {
 /* fin de estilo pagina  tablet */
 /* Estilo de pagina Mobile */
 @media only screen and (max-width: 767px) {
-  .row {
-    padding: 0 !important;
-  }
-  .row > * {
-    padding: 0 !important;
-  }
   /* Barra de navegacion */
   nav {
     --bs-bg-opacity: 1;
@@ -610,11 +602,6 @@ footer {
     font-size: 17px;
   }
   /* Fin de Home */
-  /* Contacto */
-  .banner-contacto {
-    background-size: 800%;
-  }
-  /* Fin de contacto */
   /* Proyecto */
   .banner-proyecto {
     background-size: 800%;
@@ -629,7 +616,14 @@ footer {
     width: 100%;
   }
   .container {
-    padding: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .form {
+    padding-top: 150px;
+  }
+  .footer {
+    height: auto;
   }
 }
 /* Fin de estilo de pagina Mobile *//*# sourceMappingURL=estilos.css.map */

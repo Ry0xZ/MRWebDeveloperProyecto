@@ -314,10 +314,15 @@ picture:hover::after {
     }
 }
 
-.tarjetas {
-    height: 330px;
-    min-width: 170px;
-    width: auto;
+
+
+.tarjetas:hover {
+    background-color: #212529;
+    scale: 1.05;
+    box-shadow: inset 1px 1px 22px 4px #ff000056;
+    h5,p{
+        color: #ffffff;
+    }
 }
 
 
@@ -334,6 +339,8 @@ picture:hover::after {
     font-weight: bold;
     font-size: 20px !important;
 }
+
+
 
 /* Fin de estilo pagina de servicios */
 
@@ -354,6 +361,7 @@ picture:hover::after {
     background-size: cover;
     object-fit: cover;
     background-attachment: fixed;
+    height: auto;
     /* @include fondo (auto); */
 }
 
@@ -365,6 +373,7 @@ picture:hover::after {
 
 .form {
     padding-top: 400px;
+    padding-bottom: 200px;
     
 }
 
@@ -374,7 +383,6 @@ picture:hover::after {
     background-color: #ffffff88;
     padding: 50px 10px;
     border-radius: 10px;
-    margin: 10px;
     box-shadow: inset 1px 1px 22px 4px rgba(0, 0, 0, 0.85);
 }
 
@@ -411,7 +419,7 @@ footer {
     color: #000000;
     font-family: 'Roboto',
     sans-serif;
-    height: 250px;
+    min-height: 105px;
 
 }
 
@@ -568,6 +576,10 @@ footer {
     }
 }
 
+.copyright {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 /* Fin de estilo footer */
 
 
@@ -585,13 +597,6 @@ footer {
     }
 
     /* Fin de barra de navegacion */
-
-    /* Contacto */
-    .banner-contacto {
-        background-size: 500%;
-    }
-
-    /* Fin de contacto */
 
 }
 
@@ -634,13 +639,6 @@ footer {
     }
 
     /* Fin de Home */
-
-    /* Contacto */
-    .banner-contacto {
-        background-size: 600%;
-    }
-
-    /* Fin de contacto */
 
     /* Proyecto */
     .banner-proyecto {
@@ -687,14 +685,6 @@ footer {
 
 @media only screen and (max-width: 767px) {
 
-    .row {
-        &>* {
-            padding: 0 !important;
-        }
-
-        padding: 0 !important;
-    }
-
     /* Barra de navegacion */
     nav {
         --bs-bg-opacity: 1;
@@ -725,12 +715,6 @@ footer {
     }
 
     /* Fin de Home */
-    /* Contacto */
-    .banner-contacto {
-        background-size: 800%;
-    }
-
-    /* Fin de contacto */
 
     /* Proyecto */
     .banner-proyecto {
@@ -751,8 +735,18 @@ footer {
     }
 
     .container {
-        padding: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
-}
 
+    .form{
+        padding-top: 150px;
+    }
+    
+    .footer{
+        height: auto;
+    }
+
+
+}
 /* Fin de estilo de pagina Mobile */

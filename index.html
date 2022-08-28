@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos.css">
@@ -88,9 +89,10 @@
         <section class="container-fluid banner-p d-flex align-items-center ">
             <div class="capa2"></div>
             <div class="w-100 text-center">
-                <h3 class=" "> ¿Buscas un Diseñador Web Freelance?</h3>
+                <h3 data-aos="flip-left" data-aos-duration="1000"> ¿Buscas un Diseñador Web Freelance?</h3>
                 <div class="btnn text center my-5">
-                    <button type="button " class=" botonHome__link btn btn-outline-light w-10 rounded-pill"><a
+                    <button data-aos="flip-right" data-aos-offset="200" data-aos-duration="2000" type="button "
+                        class=" botonHome__link btn btn-outline-light w-10 rounded-pill"><a
                             href="/contacto.html">¡Contáctame!</a></button>
                 </div>
             </div>
@@ -98,10 +100,10 @@
         <!-- Sobre mi -->
         <section class="container my-5 h-100" id="sobremi">
             <div class=" row">
-                <div class="col-md-5 my-5 d-flex justify-content-center">
+                <div class="col-md-5 my-5 d-flex justify-content-center " data-aos="fade-right">
                     <img src="Media/perfil.jpeg" class="perfil" alt="mi perfil">
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7" data-aos="fade-left">
                     <h3 class="display-5">Sobre <span class="text-danger">Mi</span></h3>
                     <p class="lead">He desarrollado páginas web para importantes clientes de Latinoamérica y del
                         exterior, esto me permitió adquirir una gran experiencia como programador web.
@@ -111,7 +113,7 @@
                     <button type="button" class="btn btn-dark shadow rounded-pill">Descargar CV</button>
                 </div>
             </div>
-            <div class="row my-5  w-100 justify-content-center">
+            <div class="row my-5  w-100 justify-content-center" data-aos="fade-up" data-aos-duration="3000">
                 <div class="col-md-7">
                     <h3 class="display-5 d-flex justify-content-center align-items-center">Skills</h3>
                     <h6 class="display-7 my-5">DISEÑO DE INTERFASES (UI)</h6>
@@ -272,14 +274,15 @@
         <section class="container my-5 " id="servicios">
             <div class="row">
                 <div class=" col-md-4 d-flex align-items-center">
-                    <img src="./Media/servicios.jpg" class="b-servicios " alt="cliente servicios">
+                    <img data-aos="fade-right" src="./Media/servicios.jpg" class="b-servicios " alt="cliente servicios">
                 </div>
                 <div class="container col-sm-12 col-md-8 d-flex flex-wrap justify-content-center">
                     <div class="row">
                         <h3 class="col-lg-12 display5"> Mis <span class="text-danger">Servicios</span></h3>
                     </div>
-                    <div class="card-columns">
-                        <div class="box shadow card my-5">
+                    <div class="card-column">
+                        <div class="box shadow card my-5 tarjetas" data-aos="fade-left" data-aos-offset="300"
+                            data-aos-duration="1000">>
                             <i class="text-center fa-solid fa-pencil fa-4x text-danger"></i>
                             <div class="card-body">
                                 <h5 class="card-title">Diseño Integral</h5>
@@ -290,7 +293,8 @@
                                     gráficos y digitales que necesite.</p>
                             </div>
                         </div>
-                        <div class="box shadow card my-5">
+                        <div class="box shadow card my-5 tarjetas" data-aos="fade-left" data-aos-offset="400"
+                        data-aos-duration="2000">
                             <i class="text-center fa-solid fa-fill-drip fa-4x text-danger"></i>
                             <div class="card-body">
                                 <h5 class="card-title">Diseño web</h5>
@@ -300,7 +304,8 @@
                                     por la mejor performance.</p>
                             </div>
                         </div>
-                        <div class="box shadow card my-5">
+                        <div class="box shadow card my-5 tarjetas" data-aos="fade-left" data-aos-offset="450"
+                        data-aos-duration="3000">
                             <i class="text-center fa-solid fa-magnifying-glass fa-4x text-danger"></i>
                             <div class="card-body">
                                 <h5 class="card-title">Posicionamiento web</h5>
@@ -317,8 +322,10 @@
         <!--  Fin Servicios -->
         <!--  -->
         <section class="container-fluid" style="background-color:rgb(153, 11, 23)">
-            <div class="container my-5">
-                <h2 class="text-center" style="color:#ffffff;">"Diseño experiencias digitales únicas centradas en el usuario, que impactan
+            <div class="container my-5" data-aos="flip-right" data-aos-offset="300"
+            data-aos-duration="500">
+                <h2 class="text-center" style="color:#ffffff;">"Diseño experiencias digitales únicas centradas en el
+                    usuario, que impactan
                     positivamente en la
                     satisfacción de los mismos"</h2>
             </div>
@@ -387,7 +394,7 @@
             <!-- Copyright -->
             <div class="container">
                 <div class="row">
-                    <div class=" text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    <div class="copyright text-center text-white p-3">
                         copyright © 2022. Todos los derechos reservados
                     </div>
                 </div>
@@ -397,6 +404,10 @@
     </div>
     <!-- Fin de Footer -->
     <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>

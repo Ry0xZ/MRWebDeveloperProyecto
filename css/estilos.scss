@@ -1,3 +1,31 @@
+/* Reiniciar margenes, bordes, ect*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+/* Fin de  Reiniciar margenes, bordes, ect*/
+
+/* mapas y variables */
+
+$blanco: #ffffff;
+
+$paletaDeColores:(blanco: $blanco,
+    bordo: #8f172fda,
+    negrotrans: #0000007c,
+);
+
+/* Fin de mapas y variables */
+
+/* Modificaciones de Boostrap */
 .btn {
     --bs-btn-bg: #000000;
     --bs-btn-border-color: #ffffff48;
@@ -20,45 +48,18 @@
     --bs-accordion-active-bg: #212529;
 }
 
-/* mapas y variables */
-
-$blanco: #ffffff;
-
-$paletaDeColores:(blanco: $blanco,
-    bordo: #8f172fda,
-    negrotrans: #0000007c,
-);
-
-/* Fin de mapas y variables */
-
-/* mixins */
-
-@mixin fondo ($height, ) {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: auto;
-    height: $height;
-    background-size: 200%;
-    animation: fondoanimado 90s infinite;
+.progress-bar{
+    background-color: map-get($paletaDeColores ,bordo );
 }
 
-/* Fin de mixins */
+/* Fin de Modificaciones de Boostrap */
 
 
-/* Reiniciar margenes, bordes, ect*/
+/* Mixins */
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+@import "mixins";
 
-
-html {
-    height: 100vh;
-    scroll-behavior: smooth;
-}
+/* Fin de Mixins */
 
 /* barra de navegacion */
 
@@ -67,7 +68,7 @@ html {
     padding-left: 40px;
     color: $blanco;
     text-decoration-line: overline !important;
-    text-decoration-color: rgb(0, 0, 0) !important;
+    text-decoration-color: #000000 !important;
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
     line-height: 80px;
@@ -103,10 +104,6 @@ html {
 
 
 /* Estilo de pagina Home */
-.bg-img {
-    background-image: linear-gradient(135deg, rgba(0, 32, 36, 0.774) 20%, rgba(10, 173, 255, 0.733) 50%, rgba(0, 213, 255, 0.486) 100%), url(../Media/fondo.jpeg);
-    @include fondo (auto);
-}
 
 @keyframes fondoanimado {
     0% {
@@ -204,7 +201,7 @@ video {
 }
 
 .banner-pfrecuentes {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 0.3294117647) 0%, rgba(121, 41, 9, 0.3647058824) 39%, rgba(0, 213, 255, 0.3882352941) 100%), url(../Media/pregfrecuentes.jpg);
+    background: linear-gradient(90deg, #02002454 0%, #7929095d 39%, #00d5ff63 100%), url(../Media/pregfrecuentes.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -226,8 +223,9 @@ h3 {
 
 /* Estilo pagina de proyecto */
 .banner-proyecto {
-    background: linear-gradient(135deg, rgba(46, 89, 95, 0.774) 20%, rgba(10, 173, 255, 0.733) 50%, rgba(16, 178, 211, 0.486) 100%), url(../Media/fondoproyectos.jpg);
+    background: linear-gradient(135deg, #2e595fc5 20%, #0aadffbb 50%, #10b2d37c 100%), url(../Media/fondoproyectos.jpg);
     @include fondo (auto);
+    background-attachment: fixed;
 }
 
 .contenedorProyectos__titulo {
@@ -243,7 +241,7 @@ h3 {
 }
 
 .contenedorProyectos {
-    width: 600px;
+    
     font-size: 13px;
     text-transform: uppercase;
     margin-top: 106px;
@@ -263,7 +261,7 @@ h3 {
         background-color: #14141483;
         width: 100%;
         padding: 15px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.89);
+        box-shadow: 0 0 15px #000000e3;
         border-radius: 10px;
         cursor: pointer;
     }
@@ -273,7 +271,7 @@ h3 {
     width: 100%;
 }
 
-picture {
+/* picture {
     position: relative;
     cursor: pointer;
     display: inline-grid;
@@ -284,7 +282,7 @@ picture::after {
     content: "";
     position: absolute;
     inset: -1px;
-    --_g: conic-gradient(at 50% 25%, rgba(0, 0, 0, 0.452) 75%, #0000 0) no-repeat;
+    --_g: conic-gradient(at 50% 25%, #00000073 75%, #0000 0) no-repeat;
     background:
         var(--_g) 0 calc(34% - var(--_p, 0%))/50.1% 400%,
         var(--_g) 100% calc(100% - var(--_p, 0%))/50.1% 400%;
@@ -298,7 +296,7 @@ picture.alt::after {
 picture:hover::after {
     --_p: 134%;
     opacity: 0;
-}
+} */
 
 
 
@@ -313,7 +311,6 @@ picture:hover::after {
         font-size: 30px;
     }
 }
-
 
 
 .tarjetas:hover {
@@ -340,7 +337,12 @@ picture:hover::after {
     font-size: 20px !important;
 }
 
-
+.frase{
+    background-color:rgb(153, 11, 23);
+    h2{
+        color:#ffffff;
+    }
+}
 
 /* Fin de estilo pagina de servicios */
 
@@ -355,14 +357,12 @@ picture:hover::after {
 
 
 .banner-contacto {
-    /*  background: linear-gradient(135deg, rgba(0, 32, 36, 0.774) 20%, rgba(10, 173, 255, 0.733) 50%, rgba(16, 178, 211, 0.486) 100%), url(../Media/contact.jpg); */
     background: url(../Media/contact.jpg);
     background-position: center;
     background-size: cover;
     object-fit: cover;
     background-attachment: fixed;
     height: auto;
-    /* @include fondo (auto); */
 }
 
 .formulario {
@@ -445,49 +445,7 @@ footer {
         li {
             list-style: none;
 
-            a {
-                width: 40px;
-                height: 40px;
-                background-color: #fff;
-                text-align: center;
-                line-height: 35px;
-                font-size: 25px;
-                margin: 0 5px;
-                display: block;
-                border-radius: 50%;
-                position: relative;
-                overflow: hidden;
-                border: 3px solid #fff;
-                z-index: 1;
-
-                .icon {
-                    position: relative;
-                    color: #262626;
-                    transition: .5s;
-                    z-index: 3;
-                }
-
-                &:hover .icon {
-                    color: #fff;
-                    transform: rotateY(360deg);
-                }
-
-                &:before {
-                    content: "";
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: #f00;
-                    transition: .5s;
-                    z-index: 2;
-                }
-
-                &:hover:before {
-                    top: 0;
-                }
-            }
+            @include redes;
 
             &:nth-child(1) a:before {
                 background: #0abe04;
@@ -509,49 +467,7 @@ footer {
         li {
             list-style: none;
 
-            a {
-                width: 40px;
-                height: 40px;
-                background-color: #fff;
-                text-align: center;
-                line-height: 35px;
-                font-size: 25px;
-                margin: 0 5px;
-                display: block;
-                border-radius: 50%;
-                position: relative;
-                overflow: hidden;
-                border: 3px solid #fff;
-                z-index: 1;
-
-                .icon {
-                    position: relative;
-                    color: #262626;
-                    transition: .5s;
-                    z-index: 3;
-                }
-
-                &:hover .icon {
-                    color: #fff;
-                    transform: rotateY(360deg);
-                }
-
-                &:before {
-                    content: "";
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: #f00;
-                    transition: .5s;
-                    z-index: 2;
-                }
-
-                &:hover:before {
-                    top: 0;
-                }
-            }
+            @include redes;
 
             &:nth-child(1) a:before {
                 background: #3b5999;
@@ -577,176 +493,10 @@ footer {
 }
 
 .copyright {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #00000033;
 }
 
 /* Fin de estilo footer */
 
 
-
-/*------------------ RESPONSIVE ------------------*/
-
-/* Estilo pagina  escritorio */
-
-@media only screen and (max-width: 1366px) {
-
-    /* Barra de navegacion */
-    .logo {
-        font-size: 26px;
-        padding-left: 20px;
-    }
-
-    /* Fin de barra de navegacion */
-
-}
-
-/* fin de estilo pagina  escritorio */
-
-/* Estilo pagina  tablet */
-
-@media only screen and (max-width: 992px) {
-
-
-
-    /* Barra de navegacion */
-
-    .logo {
-        font-size: 20px !important;
-        padding: 0 0px !important;
-        padding-top: 10px;
-
-    }
-
-    .navbar-toggler-icon {
-        width: 1.4em;
-        height: 1.4em;
-        color: map-get($paletaDeColores, blanco);
-    }
-
-    /* Fin de barra de navegacion */
-
-    /* Home */
-    .bg-img {
-        background-size: 600%;
-    }
-
-    .contenidoHome__titulo {
-        font-size: 27px;
-    }
-
-    .contenidoHome__link {
-        font-size: 27px;
-    }
-
-    /* Fin de Home */
-
-    /* Proyecto */
-    .banner-proyecto {
-        background-size: 600%;
-    }
-
-    .contenedorProyectos__titulo h2 {
-        font-size: 18px;
-    }
-
-    .contenedorProyectos__parrafo p {
-        font-size: 16px;
-    }
-
-    /* Sobre mi */
-    .perfil {
-        width: 200px;
-        height: 200px;
-    }
-
-    /* Fin de sobre mi */
-
-    /* Servicios */
-    .fa-4x {
-        font-size: 2.5em;
-    }
-
-    .lead {
-        font-size: 18px !important;
-    }
-
-
-    #servicios {
-        height: auto;
-    }
-
-    /* Fin de servicios */
-
-}
-
-/* fin de estilo pagina  tablet */
-
-/* Estilo de pagina Mobile */
-
-@media only screen and (max-width: 767px) {
-
-    /* Barra de navegacion */
-    nav {
-        --bs-bg-opacity: 1;
-        background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
-    }
-
-    .logo {
-        font-size: 18px !important;
-    }
-
-    /* Fin de barra de navegacion */
-
-    /* Home */
-    .bg-img {
-        background-size: 700%;
-    }
-
-    .contenidoHome__titulo {
-        font-size: 18px;
-    }
-
-    .contenidoHome__link {
-        font-size: 18px;
-    }
-
-    .contenedorProyectos__titulo h2 {
-        font-size: 17px;
-    }
-
-    /* Fin de Home */
-
-    /* Proyecto */
-    .banner-proyecto {
-        background-size: 800%;
-    }
-
-    /* Fin de Proyecto */
-
-    /* Sobre mi */
-    #sobremi {
-        height: auto;
-    }
-
-    /* Fin de Sobre mi */
-
-    .b-servicios {
-        width: 100%;
-    }
-
-    .container {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
-    .form{
-        padding-top: 150px;
-    }
-    
-    .footer{
-        height: auto;
-    }
-
-
-}
-/* Fin de estilo de pagina Mobile */
+@import "responsive";

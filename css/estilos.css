@@ -11,6 +11,12 @@ html {
 }
 
 /* Fin de  Reiniciar margenes, bordes, ect*/
+/* Fuentes importadas */
+@font-face {
+  font-family: Reno;
+  src: url(../fonts/reno-1.woff);
+}
+/* Fin de Fuentes importadas */
 /* mapas y variables */
 /* Fin de mapas y variables */
 /* Modificaciones de Boostrap */
@@ -82,7 +88,7 @@ html {
 }
 
 /* Fin de barra de navegacion */
-/* Estilo de pagina Home */
+/* Animaciones */
 @-webkit-keyframes fondoanimado {
   0% {
     background-position: 30% 50%;
@@ -105,6 +111,8 @@ html {
     background-position: 0% 30%;
   }
 }
+/* Fin de  Animaciones */
+/* Estilo de pagina Home */
 video, .capa {
   position: absolute;
   top: 0;
@@ -151,7 +159,68 @@ video, .capa {
   color: #ffffff;
 }
 
+.scroll-down {
+  height: 120px;
+  width: 80px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 100px;
+}
+.scroll-down::before, .scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  bottom: 10%;
+  border: 5px solid #ffffff;
+  height: 40px;
+  width: 40px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  -webkit-animation: scroll-down 1s ease-in-out infinite;
+          animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::after {
+  top: 30%;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+@-webkit-keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90%;
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90%;
+  }
+}
 /* Fin de estilo de pagina Home */
+/* Estilo de seccion pregunta */
 .banner-p {
   width: 100%;
   height: 700px;
@@ -163,11 +232,16 @@ video, .capa {
      object-fit: cover;
 }
 
+/* Fin de estilo seccion pregunta */
 /* Estilo pagina Sobre mi */
 .perfil {
   width: 240px;
   height: 240px;
   border-radius: 50%;
+}
+
+.skils h6 {
+  text-transform: uppercase;
 }
 
 /* Fin de Estilo pagina Sobre mi */
@@ -188,15 +262,12 @@ video, .capa {
   color: #ffffff;
 }
 
-@font-face {
-  font-family: Reno;
-  src: url(../fonts/reno-1.woff);
-}
 h1,
 h3 {
   font-family: "Reno", Sans-serif;
 }
 
+/* Fin de Preguntas Frecuentes */
 /* Estilo pagina de proyecto */
 .banner-proyecto {
   background: linear-gradient(135deg, rgba(46, 89, 95, 0.7725490196) 20%, rgba(10, 173, 255, 0.7333333333) 50%, rgba(16, 178, 211, 0.4862745098) 100%), url(../media/fondoproyectos.jpg);
@@ -266,7 +337,8 @@ h3 {
   scale: 1.05;
   box-shadow: inset 1px 1px 22px 4px rgba(255, 0, 0, 0.337254902);
 }
-.tarjetas:hover h5, .tarjetas:hover p {
+.tarjetas:hover h5,
+.tarjetas:hover p {
   color: #ffffff;
 }
 
@@ -297,6 +369,10 @@ h3 {
 #sobremi {
   padding-top: 110px;
   height: 800px;
+}
+
+.lead {
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* Estilo pagina de contacto*/
@@ -416,7 +492,8 @@ footer {
 .contacto ul li:nth-child(1) a:before {
   background: #0abe04;
 }
-.contacto ul li:nth-child(2) a:hover .icon, .contacto ul li a:before {
+.contacto ul li:nth-child(2) a:hover .icon,
+.contacto ul li a:before {
   color: #e23131;
   background: #ffffff;
 }

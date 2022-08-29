@@ -10,9 +10,19 @@
 html {
     height: 100vh;
     scroll-behavior: smooth;
+
 }
 
 /* Fin de  Reiniciar margenes, bordes, ect*/
+
+/* Fuentes importadas */
+
+@font-face {
+    font-family: Reno;
+    src: url(../fonts/reno-1.woff);
+}
+
+/* Fin de Fuentes importadas */
 
 /* mapas y variables */
 
@@ -48,8 +58,8 @@ $paletaDeColores:(blanco: $blanco,
     --bs-accordion-active-bg: #212529;
 }
 
-.progress-bar{
-    background-color: map-get($paletaDeColores ,bordo );
+.progress-bar {
+    background-color: map-get($paletaDeColores, bordo);
 }
 
 /* Fin de Modificaciones de Boostrap */
@@ -102,8 +112,7 @@ $paletaDeColores:(blanco: $blanco,
 
 /* Fin de barra de navegacion */
 
-
-/* Estilo de pagina Home */
+/* Animaciones */
 
 @keyframes fondoanimado {
     0% {
@@ -119,6 +128,10 @@ $paletaDeColores:(blanco: $blanco,
     }
 
 }
+
+/* Fin de  Animaciones */
+
+/* Estilo de pagina Home */
 
 video {
     position: absolute;
@@ -171,9 +184,58 @@ video {
 
 }
 
+.scroll-down {
+    height: 120px;
+    width: 80px;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    bottom: 100px;
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        bottom: 10%;
+        border: 5px solid #ffffff;
+        height: 40px;
+        width: 40px;
+        transform: translate(-50%, -100%) rotate(45deg);
+        border-top: transparent;
+        border-left: transparent;
+        animation: scroll-down 1s ease-in-out infinite;
+    }
+
+    &::after{
+        top: 30%;
+        animation-delay: .5s;
+    }
+}
+
+@keyframes scroll-down {
+
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top: 90%;
+    }
+    
+}
+
+
 
 /* Fin de estilo de pagina Home */
 
+/* Estilo de seccion pregunta */
 .banner-p {
     width: 100%;
     height: 700px;
@@ -184,11 +246,17 @@ video {
     object-fit: cover;
 }
 
+/* Fin de estilo seccion pregunta */
+
 /* Estilo pagina Sobre mi */
 .perfil {
     width: 240px;
     height: 240px;
     border-radius: 50%;
+}
+
+.skils h6 {
+    text-transform: uppercase;
 }
 
 
@@ -206,20 +274,18 @@ video {
     background-position: center;
     background-size: cover;
     object-fit: cover;
-    h3{
+
+    h3 {
         color: #ffffff;
     }
-}
-
-@font-face {
-    font-family: Reno;
-    src: url(../fonts/reno-1.woff);
 }
 
 h1,
 h3 {
     font-family: "Reno", Sans-serif;
 }
+
+/* Fin de Preguntas Frecuentes */
 
 /* Estilo pagina de proyecto */
 .banner-proyecto {
@@ -241,7 +307,7 @@ h3 {
 }
 
 .contenedorProyectos {
-    
+
     font-size: 13px;
     text-transform: uppercase;
     margin-top: 106px;
@@ -290,7 +356,9 @@ h3 {
     background-color: #212529;
     scale: 1.05;
     box-shadow: inset 1px 1px 22px 4px #ff000056;
-    h5,p{
+
+    h5,
+    p {
         color: #ffffff;
     }
 }
@@ -310,10 +378,11 @@ h3 {
     font-size: 20px !important;
 }
 
-.frase{
-    background-color:rgb(153, 11, 23);
-    h2{
-        color:#ffffff;
+.frase {
+    background-color: rgb(153, 11, 23);
+
+    h2 {
+        color: #ffffff;
     }
 }
 
@@ -323,6 +392,10 @@ h3 {
 #sobremi {
     padding-top: 110px;
     height: 800px;
+}
+
+.lead {
+    font-family: 'Times New Roman', Times, serif
 }
 
 /* Estilo pagina de contacto*/
@@ -347,12 +420,12 @@ h3 {
 .form {
     padding-top: 400px;
     padding-bottom: 200px;
-    
+
 }
 
 
 
-.contenedor-form{
+.contenedor-form {
     background-color: #ffffff88;
     padding: 50px 10px;
     border-radius: 10px;
@@ -403,11 +476,12 @@ footer {
     a {
         text-decoration: none;
         color: #ffffff;
+
         &:hover {
             color: map-get($paletaDeColores, bordo);
         }
     }
-    
+
 }
 
 .contacto {
@@ -424,7 +498,8 @@ footer {
                 background: #0abe04;
             }
 
-            &:nth-child(2) a:hover .icon, a:before {
+            &:nth-child(2) a:hover .icon,
+            a:before {
                 color: #e23131;
                 background: #ffffff;
             }

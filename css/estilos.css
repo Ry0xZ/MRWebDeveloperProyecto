@@ -116,7 +116,7 @@ video, .capa {
 }
 
 .capa {
-  background: url(../Media/pattern.png) repeat;
+  background: url(../media/pattern.png) repeat;
   opacity: 0.8;
 }
 
@@ -155,7 +155,7 @@ video, .capa {
 .banner-p {
   width: 100%;
   height: 700px;
-  background: linear-gradient(90deg, rgba(2, 0, 36, 0.3294117647) 0%, rgba(121, 41, 9, 0.3647058824) 39%, rgba(0, 213, 255, 0.3882352941) 100%), url(../Media/banner-pregunta.png);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.3294117647) 0%, rgba(121, 41, 9, 0.3647058824) 39%, rgba(0, 213, 255, 0.3882352941) 100%), url(../media/banner-pregunta.png);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -177,7 +177,7 @@ video, .capa {
 }
 
 .banner-pfrecuentes {
-  background: linear-gradient(90deg, rgba(2, 0, 36, 0.3294117647) 0%, rgba(121, 41, 9, 0.3647058824) 39%, rgba(0, 213, 255, 0.3882352941) 100%), url(../Media/pregfrecuentes.jpg);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.3294117647) 0%, rgba(121, 41, 9, 0.3647058824) 39%, rgba(0, 213, 255, 0.3882352941) 100%), url(../media/pregfrecuentes.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -199,7 +199,7 @@ h3 {
 
 /* Estilo pagina de proyecto */
 .banner-proyecto {
-  background: linear-gradient(135deg, rgba(46, 89, 95, 0.7725490196) 20%, rgba(10, 173, 255, 0.7333333333) 50%, rgba(16, 178, 211, 0.4862745098) 100%), url(../Media/fondoproyectos.jpg);
+  background: linear-gradient(135deg, rgba(46, 89, 95, 0.7725490196) 20%, rgba(10, 173, 255, 0.7333333333) 50%, rgba(16, 178, 211, 0.4862745098) 100%), url(../media/fondoproyectos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -327,7 +327,7 @@ picture:hover::after {
 
 /* Estilo pagina de contacto*/
 .banner-contacto {
-  background: url(../Media/contact.jpg);
+  background: url(../media/contact.jpg);
   background-position: center;
   background-size: cover;
   -o-object-fit: cover;

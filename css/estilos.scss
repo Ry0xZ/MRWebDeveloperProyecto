@@ -131,7 +131,7 @@ video {
 
 .capa {
     @extend video;
-    background: url(../Media/pattern.png) repeat;
+    background: url(../media/pattern.png) repeat;
     opacity: 0.8;
 
 }
@@ -177,7 +177,7 @@ video {
 .banner-p {
     width: 100%;
     height: 700px;
-    background: linear-gradient(90deg, #02002454 0%, #7929095d 39%, #00d5ff63 100%), url(../Media/banner-pregunta.png);
+    background: linear-gradient(90deg, #02002454 0%, #7929095d 39%, #00d5ff63 100%), url(../media/banner-pregunta.png);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -201,7 +201,7 @@ video {
 }
 
 .banner-pfrecuentes {
-    background: linear-gradient(90deg, #02002454 0%, #7929095d 39%, #00d5ff63 100%), url(../Media/pregfrecuentes.jpg);
+    background: linear-gradient(90deg, #02002454 0%, #7929095d 39%, #00d5ff63 100%), url(../media/pregfrecuentes.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -223,7 +223,7 @@ h3 {
 
 /* Estilo pagina de proyecto */
 .banner-proyecto {
-    background: linear-gradient(135deg, #2e595fc5 20%, #0aadffbb 50%, #10b2d37c 100%), url(../Media/fondoproyectos.jpg);
+    background: linear-gradient(135deg, #2e595fc5 20%, #0aadffbb 50%, #10b2d37c 100%), url(../media/fondoproyectos.jpg);
     @include fondo (auto);
     background-attachment: fixed;
 }
@@ -357,7 +357,7 @@ picture:hover::after {
 
 
 .banner-contacto {
-    background: url(../Media/contact.jpg);
+    background: url(../media/contact.jpg);
     background-position: center;
     background-size: cover;
     object-fit: cover;
